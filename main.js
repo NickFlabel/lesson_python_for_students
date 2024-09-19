@@ -9,4 +9,4 @@ let name = "Nick";
 
 consol.log(name.slice(0, 2)); // "Ni"
 
-
+let my_val = true
