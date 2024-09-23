@@ -114,6 +114,11 @@ import requests
 # pip freeze > requirements.txt - сохранить установленные библиотеки в файл
 # pip install -r requirements.txt - устанавливает все библиотеки из файла
 
+# Создать новое виртуальное окружение py -m venv <название окружения>
+# Активация: <название директории с окружением>/Scripts/activate
+# Активация на unix-подобных системах source <название>/bin/activate
+# Деактивация: deactivate
+
 # import my_python_dir
 # from my_python_dir import my_module_func
 # from my_python_dir.my_module import my_tuple
