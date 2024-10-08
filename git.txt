@@ -1,1 +1,6 @@
 git status
+git add <название файла>
+git commit -m 'git commands'
+git remote add orign <ссылка>
+git push origin master
+git pull origin master
