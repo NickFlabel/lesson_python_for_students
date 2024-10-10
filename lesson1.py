@@ -1,6 +1,9 @@
 # Comment
 # String
 
+from my_python_dir import A, B
+import sqlite3
+
 '''
 This is 
 a
