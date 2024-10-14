@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}All Rooms{% endblock %}
+
+{% block content %}
+<div>
+    <form>
+        {{ form.as_p }}
+        <button type="submit">Отправить</button>
+    </form>
+</div>
+
+{% for room in available_rooms %}
+<div>
+    <h2><a href="{% url 'room_detail' room.id %}">{{ room.name }}</a></h2>
+    <p>Описание: {{ room.description }}</p>
+    <p>Цена: {{ room.price }}</p>
+    <p>Категория: {{ room.category_id.name }}</p>
+    <p>Количество бронирований: {{ room.booking_count }}</p>
+</div>
+{% endfor %}
+{% endblock %}

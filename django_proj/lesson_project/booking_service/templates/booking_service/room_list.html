@@ -10,7 +10,9 @@
         <p>Описание: {{ room.description }}</p>
         <p>Цена: {{ room.price }}</p>
         <p>Категория: {{ room.category_id.name }}</p>
+        <p>Количество бронирований: {{ room.booking_count }}</p>
     </div>
     {% endfor %}
+    <p>Средняя цена: {{ avg_price }}</p>
 </div>
 {% endblock %}
