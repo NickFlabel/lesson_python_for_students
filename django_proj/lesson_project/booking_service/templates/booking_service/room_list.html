@@ -4,7 +4,7 @@
 
 {% block content %}
 <div>
-    {% for room in rooms %}
+    {% for room in object_list %}
     <div>
         <h2><a href="{% url 'room_detail' room.id %}">{{ room.name }}</a></h2>
         <p>Описание: {{ room.description }}</p>
