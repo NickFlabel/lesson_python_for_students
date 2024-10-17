@@ -1,12 +1,8 @@
-from msilib.schema import BBControl
-from operator import ge
-from urllib import request
 from django.shortcuts import render
 from django.http import HttpResponse, HttpRequest
 from django.template import loader
 from my_app.models import BBoard
 from my_app.forms import BBoardForm
-from django.shortcuts import get_object_or_404, render
 
 # Create your views here.
 
