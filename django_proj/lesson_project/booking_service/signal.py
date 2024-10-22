@@ -12,6 +12,8 @@ def created(sender, instance, created: bool, **kwargs):
 
 # Room(name="room")
 
+# post_save.connect(created)
+
 my_signal = Signal()
 
 def my_signal_subscriber(sender, **kwargs):

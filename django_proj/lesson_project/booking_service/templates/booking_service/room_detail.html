@@ -15,6 +15,9 @@
         {{ amenity.name }}
     </div>
     {% endfor %}
+    {% if room.image %}
+        <img src="{{ room.image.url }}">
+    {% endif %}
 </div>
 <a href="{% url 'room_list' %}">Назад к списку комнат</a>
 {% endblock %}

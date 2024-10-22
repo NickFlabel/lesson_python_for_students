@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf.urls.static import static
+from django.conf import settings
 
 # http://127.0.0.1/admin/ -> 'admin/' 
 # http://127.0.0.1/my_app/index/ -> my_app/index/ -> index/
@@ -25,3 +27,5 @@ urlpatterns = [
     path("my_app/", include("my_app.urls")),
     path("", include("booking_service.urls")), # urlpatterns += booking_service.urs.urlpatters
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

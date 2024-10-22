@@ -9,12 +9,25 @@ from django.contrib.auth.models import User
 # Удобства
 
 
+class RoomManager(models.Manager):
+    def available(self):
+        return self.filter(availability=True)
+    
+    def by_category(self, category_name):
+        return self.filter(category_id__name=category_name)
+
+
+
 class Room(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     price = models.IntegerField() # DecimalField(max_digits=5, decimal_places=2) - число с двумя позициями после точки
     category_id = models.ForeignKey('Category', on_delete=models.CASCADE)
     availability = models.BooleanField(default=True)
+    image = models.ImageField(upload_to="room_images/", blank=True, null=True)
+    # pdf = models.FileField()
+
+    objects = RoomManager()
 
     def __str__(self):
         return f"Room: {self.name}"

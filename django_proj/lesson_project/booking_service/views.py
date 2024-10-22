@@ -72,8 +72,9 @@ class RoomDetailView(DetailView):
 class RoomCreateView(CreateView):
     model = Room
     form_class = RoomForm
+    # fields = "__all__"
     success_url = reverse_lazy("room_list")
-    template_name: str = "booking_service/room_form.html"
+    template_name: str = "booking_service/room_form.html" # default: room_create.html
 
 
 class RoomUpdateView(UpdateView):
@@ -119,7 +120,7 @@ def create_room(request):
     return render(request, "booking_service/room_form.html", {"form": form})
 
 
-def update_room(request, room_id):
+def update_room(request, room_id): # __call__(request)
     room = get_object_or_404(Room, id=room_id)
 
     if request.method == "POST":
@@ -150,6 +151,9 @@ def delete_room(request, room_id):
 
 
 def check_availability(request):
+    # cookies = request.COOKIES
+    my_cookie = request.get_signed_cookie("my_cookie")
+    print(my_cookie)
     available_rooms = None
     form = AvailabilityForm(request.GET or None) # http://mysite/my_urs?my_var=1 -> my_var - GET-параметр
                                                 # curl -X POST http://example.com -d "param1=value1& /<id>/"
@@ -160,7 +164,10 @@ def check_availability(request):
 
         available_rooms = get_available_rooms(start_date, end_date)
     
-    return render(request, "booking_service/check_availability.html", {"form": form, "available_rooms": available_rooms})
+    response = render(request, "booking_service/check_availability.html", {"form": form, "available_rooms": available_rooms})
+    # response.set_cookie("my_cookie", "10")
+    response.set_signed_cookie("my_cookie", "10")
+    return response
 
 
 def register(request):
