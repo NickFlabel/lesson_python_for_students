@@ -12,6 +12,7 @@ from django.db.transaction import atomic
 from booking_service.signal import my_signal
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
+from django.http import JsonResponse
 
 # Create your views here.
 
@@ -180,3 +181,11 @@ def register(request):
     else:
         form = UserRegistrationForm()
     return render(request, "booking_service/register.html", {"form": form})
+
+
+def get_json_rooms(request):
+    objects = Room.objects.all()
+
+    data = [{"id": obj.id, "name": obj.name} for obj in objects]
+
+    return JsonResponse(data, safe=False)
