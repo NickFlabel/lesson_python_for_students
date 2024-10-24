@@ -1,6 +1,6 @@
 from django.db.models.signals import post_save
 from django.dispatch import receiver
-from booking_service.models import Room, Booking
+from booking_service.models import Room
 from django.dispatch import Signal
 
 @receiver(post_save, sender=Room)

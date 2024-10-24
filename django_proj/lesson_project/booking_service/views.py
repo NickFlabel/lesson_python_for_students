@@ -1,4 +1,3 @@
-from tkinter import image_names
 from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse_lazy
 from booking_service.models import Room
@@ -6,12 +5,11 @@ from booking_service.forms import RoomForm, ConfirmDeleteForm, AvailabilityForm,
 from django.db.models import Count, Avg
 from django.contrib.auth import login
 from booking_service.utils import get_available_rooms
-from django.contrib.auth.decorators import login_required, permission_required, user_passes_test
-from django.views import View
+from django.contrib.auth.decorators import user_passes_test
 from django.db.transaction import atomic
 from booking_service.signal import my_signal
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.mixins import PermissionRequiredMixin
 from django.http import JsonResponse
 
 # Create your views here.

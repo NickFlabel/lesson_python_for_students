@@ -1,7 +1,6 @@
 from django.urls import path
 from booking_service.views import (
-    room_list, room_detail, create_room, 
-    update_room, delete_room, check_availability, register, RoomListView, RoomDetailView, RoomCreateView, RoomDeleteView, RoomUpdateView, get_json_rooms
+    check_availability, register, RoomListView, RoomDetailView, RoomCreateView, RoomDeleteView, RoomUpdateView, get_json_rooms
 )
 from django.contrib.auth import views as auth_views
 

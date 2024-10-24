@@ -1,8 +1,8 @@
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Profile, Post
-from .serializers import ProfileSerializer, PostSerializer
+from .models import Profile
+from .serializers import ProfileSerializer
 
 # Create your views here.
 
@@ -10,7 +10,7 @@ from .serializers import ProfileSerializer, PostSerializer
 def profile_list_create(request):
     if request.method == "GET":
         profiles = Profile.objects.all()
-        serializer = ProfileSerializer(profiles, many=True)
+        serializer = ProfileSerializer(profiles, many=True, context={"request": request})
         return Response(serializer.data)
     
     elif request.method == "POST":
@@ -32,7 +32,7 @@ def profile_detail(request, pk):
         return Response(serializer.data)
     
     elif request.method == "PUT":
-        serializer = ProfileSerializer(profile, data=request.data)
+        serializer = ProfileSerializer(profile, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

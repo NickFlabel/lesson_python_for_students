@@ -26,7 +26,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("my_app/", include("my_app.urls")),
     path("", include("booking_service.urls")), # urlpatterns += booking_service.urs.urlpatters
-    path("api/", include("drf_app.urls"))
+    path("api/", include("ecom.urls")),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

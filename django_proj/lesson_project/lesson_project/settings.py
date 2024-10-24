@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     # local
     "my_app",
     "booking_service",
-    "drf_app",
+    "ecom",
 ]
 
 MIDDLEWARE = [
