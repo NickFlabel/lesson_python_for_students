@@ -35,7 +35,7 @@ class Product(models.Model):
 
 class Order(models.Model):
     profile_id = models.ForeignKey(Profile, on_delete=models.CASCADE)
-    created_at = models.DateTimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=50, choices=(
         ('pending', 'Pending'), ("completed", "Completed"), ("canceled", "Canceled")
     ))

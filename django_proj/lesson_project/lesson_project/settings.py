@@ -141,3 +141,10 @@ MEDIA_ROOT = BASE_DIR / "media"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    # "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination", - пагинация с разбивкой на страницы
+    # "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination", - пагинация с offset и limit (количество элементов и смещение)
+    # "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.CursorPagination", - пагинация при помощи зашифронного курсора
+    # "PAGE_SIZE": 2,
+}

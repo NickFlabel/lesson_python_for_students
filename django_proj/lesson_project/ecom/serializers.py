@@ -111,8 +111,18 @@ class OrderCreateSerializer(serializers.ModelSerializer):
 class OrderOutSerializer(serializers.ModelSerializer):
     profile_id = ProfileSerializer()
 
-
     class Meta:
         model = Order
         fields = "__all__"
 
+
+class ProductPriceFilterSerializer(serializers.Serializer):
+    min_price = serializers.DecimalField(max_digits=10, decimal_places=2, required=False)
+    max_price = serializers.DecimalField(max_digits=10, decimal_places=2, required=False)
+
+    def validate(self, attrs):
+        min_price = attrs.get("min_price") # attrs["min_price"] - KeyError
+        max_price = attrs.get("max_price")
+        if min_price and max_price and min_price > max_price:
+            raise serializers.ValidationError("Максимальная цена не может быть меньше минимальной")
+        return attrs
