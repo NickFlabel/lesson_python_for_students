@@ -147,6 +147,12 @@ Plan 19.09
 4) View Sets
 5) аутентификация и авторизация
 
+29.10
+1) ViewSets
+2) Аутентификация и авторизация
+2.1) Postman
+3) Документация
+4) Тесты
 
 CSRF - Cross-Site Request Forgery - это уникальный случайно сгенерированный токен для защиты веб-приложения от атак CSRF
 
@@ -185,6 +191,12 @@ HTTP метод + url ресурса - интерфейс REST API
 
 
 pip install djangorestframework
+pip install djangorestframework-simplejwt - поддержка JWT
+
+JWT (JSON Web Token) - открытый стандарт, который определяет комкатный и автономный способ безопасной
+передачи информации двумя сторонами
+
+Токен внутри запроса направляется при помощи заголовка Authentication: Bearer <токен>
 
 Django REST Framework (DRF):
 Структура приложения будет такая же как в случае с обычным Django, но

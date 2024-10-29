@@ -41,6 +41,7 @@ INSTALLED_APPS = [
 
     # third-party
     "rest_framework",
+    "rest_framework_simplejwt",
 
     # local
     "my_app",
@@ -147,4 +148,10 @@ REST_FRAMEWORK = {
     # "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.LimitOffsetPagination", - пагинация с offset и limit (количество элементов и смещение)
     # "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.CursorPagination", - пагинация при помощи зашифронного курсора
     # "PAGE_SIZE": 2,
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ),
+    "DEFAULT_PERMISSION_CLASSES": (
+        "rest_framework.permissions.IsAuthenticated",
+    )
 }

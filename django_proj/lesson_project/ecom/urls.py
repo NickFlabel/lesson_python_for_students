@@ -1,21 +1,25 @@
+from ast import Or
 from django.urls import path
 from .views import (
-    ProductRetrieveUpdateDestroyAPIView, 
-    ProductListCreateAPIView,
-    OrderListCreateAPIView,
-    OrderRetrieveUpdateDestroyAPIView,
     ProfileViewSet,
+    CategoryViewSet,
+    ProductViewSet,
+    OrderViewSet,
+    ReadOnlyProfileViewSet,
 )
 from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+
 router = DefaultRouter()
 router.register(r"profiles", ProfileViewSet)
+router.register(r"categories", CategoryViewSet)
+router.register(r"products", ProductViewSet, basename="products"),
+router.register(r"orders", OrderViewSet),
+router.register(r"profiles-protected", ReadOnlyProfileViewSet, basename="read-only-profiles")
 
 urlpatterns = [
-    path("products/", ProductListCreateAPIView.as_view(), name="product-list-create"),
-    path("products/<int:pk>", ProductRetrieveUpdateDestroyAPIView.as_view(), name="product-detail"),
-
-    path("orders/", OrderListCreateAPIView.as_view(), name="order-list-create"),
-    path("orders/<int:pk>", OrderRetrieveUpdateDestroyAPIView.as_view(), name="order-detail")
+    path("token/", TokenObtainPairView.as_view(), name="token_obtain_pair"),
+    path("token/refresh/", TokenRefreshView.as_view(), name="token_refresh"),
 ]
 
 urlpatterns += router.urls
