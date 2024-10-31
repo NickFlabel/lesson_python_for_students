@@ -1,4 +1,6 @@
-from rest_framework import generics
+from rest_framework import permissions
+from drf_yasg.utils import swagger_auto_schema
+from drf_yasg import openapi
 from rest_framework.response import Response
 from .models import Category, Product, Profile, Order
 from .serializers import (
@@ -13,17 +15,20 @@ from .serializers import (
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from .paginators import CustomPageNumberPagination
+from .permissions import IsOwnerOrAdmin
 
 # Create your views here.
 
 class ProfileViewSet(viewsets.ModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticated] # Требует чтобы пользователь прислал свой валидный токен
 
 
 class ReadOnlyProfileViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = Profile.objects.all()
     serializer_class = ProfileSerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly] # Требует токена только на POST, PUT, PATCH, DELETE
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
@@ -39,7 +44,8 @@ class CategoryViewSet(viewsets.ModelViewSet):
 
 class OrderViewSet(viewsets.ModelViewSet):
     queryset = Order.objects.all()
-    
+    permission_classes = [IsOwnerOrAdmin]
+
     def get_serializer_class(self):
         if self.request.method in ["PUT", "PATCH", "POST"]:
             return OrderCreateSerializer
@@ -48,6 +54,24 @@ class OrderViewSet(viewsets.ModelViewSet):
 
 class ProductViewSet(viewsets.ModelViewSet):
     pagination_class = CustomPageNumberPagination
+
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter("max_price", openapi.IN_QUERY, description="Максимальная цена", type=openapi.TYPE_INTEGER),
+            openapi.Parameter("min_price", openapi.IN_QUERY, description="Максимальная цена", type=openapi.TYPE_INTEGER)
+        ],
+        operation_description="Отдает все товары",
+        responses={200: ProductOutSerializer(many=True)}
+    )
+    def list(self, request, *args, **kwargs):
+        return super().list(request, *args, **kwargs)
+
+    @swagger_auto_schema(
+        request_body=ProductInSerializer,
+        responses={201: ProductOutSerializer()}
+    )
+    def create(self, request, *args, **kwargs):
+        return super().create(request, *args, **kwargs)
 
     def get_serializer_class(self):
         if self.request.method in ["PUT", "PATCH", "POST"]:

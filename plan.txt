@@ -154,6 +154,13 @@ Plan 19.09
 3) Документация
 4) Тесты
 
+31.10
+1) Логирование
+2) Тесты
+3) Email
+4) Практическая работа
+5) Подготовка проекта к публикации
+
 CSRF - Cross-Site Request Forgery - это уникальный случайно сгенерированный токен для защиты веб-приложения от атак CSRF
 
 KISS - Keep it simple stupid
@@ -192,6 +199,7 @@ HTTP метод + url ресурса - интерфейс REST API
 
 pip install djangorestframework
 pip install djangorestframework-simplejwt - поддержка JWT
+pip install drf-yasg - библиотека для автоматической генерации Swagger-документации
 
 JWT (JSON Web Token) - открытый стандарт, который определяет комкатный и автономный способ безопасной
 передачи информации двумя сторонами
