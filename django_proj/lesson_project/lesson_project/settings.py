@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 
 from pathlib import Path
 import os
+import dotenv
+
+dotenv.load_dotenv()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,14 +24,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-0b5mlk$d!+@!#3yjs6kr!s(6u!0=6#)g-*=r5!-x+_rrxh7$c)'
-# SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
+SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ["*"]
-
 
 # Application definition
 
@@ -53,6 +54,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -90,6 +92,14 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    "postgresql": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "my_db",
+        "USER": "username",
+        "PASSWORD": "my_password",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -133,9 +143,7 @@ LOGIN_URL = 'login'
 
 STATIC_URL = 'staticfiles/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "statifiles"
-]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 MEDIA_URL = "/media/"
 MEDIA_ROOT = BASE_DIR / "media"
@@ -203,3 +211,12 @@ LOGGING = {
 # SMTPHandler - отправление по электронной почте
 # RotaitingFileHandler - ротация файлов после достижения определенного размера
 # TimedRotaitingFileHandler - ротация логов по времени
+
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+# "django.core.mail.backends.SmptEmailBackend" - бэкэнд для отправки электронных писем
+DEFAULT_FROM_EMAIL = "admin@admin.com"
+
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "my_mail@gmail.com"
+EMAIL_HOST_PASSWORD = "my_password"
