@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -156,3 +157,49 @@ REST_FRAMEWORK = {
     #     "rest_framework.permissions.IsAuthenticated",
     # )
 }
+
+# Logging levels: INFO, CRITICAL, ERROR, WARNING, etc...
+# DEBUG = 10, INFO = 20, WARNING = 30, ERROR = 40, CRITICAL = 50
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "simple": {
+            "format": "{levelname} {message}",
+            "style": "{"
+        },
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{"
+        }
+    },
+    "handlers": {
+        "console": {
+            "level": "DEBUG",
+            "class": "logging.StreamHandler",
+            "formatter": "simple",
+        },
+        "file": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(BASE_DIR, "log.log"),
+            "formatter": "verbose"
+        }
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file", "console"],
+            "level": "INFO"
+        },
+        "ecom": {
+            "handlers": ["file", "console"],
+            "level": "INFO"
+        }
+    }
+}
+# StreamHandler - поток в STDOUT
+# FileHandler - записывает в файл
+# NullHandler - никуда не отправляет
+# SMTPHandler - отправление по электронной почте
+# RotaitingFileHandler - ротация файлов после достижения определенного размера
+# TimedRotaitingFileHandler - ротация логов по времени

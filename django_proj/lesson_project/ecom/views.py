@@ -16,6 +16,9 @@ from rest_framework import viewsets
 from rest_framework.decorators import action
 from .paginators import CustomPageNumberPagination
 from .permissions import IsOwnerOrAdmin
+import logging
+
+logger = logging.getLogger("ecom")
 
 # Create your views here.
 
@@ -30,12 +33,21 @@ class ReadOnlyProfileViewSet(viewsets.ReadOnlyModelViewSet):
     serializer_class = ProfileSerializer
     permission_classes = [permissions.IsAuthenticatedOrReadOnly] # Требует токена только на POST, PUT, PATCH, DELETE
 
+    def list(self, request, *args, **kwargs):
+        logger.info(f"Request with method GET was made by user {request.user}")
+        logger.debug("DEBUG MESSAGE")
+        return super().list(request, *args, **kwargs)
+
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
     @action(detail=True, methods=["get"])
+    @swagger_auto_schema(
+        operation_description="Отдает все товары какой-либо категории",
+        responses={200: ProductOutSerializer(many=True)}
+    )
     def get_products(self, request, pk):
         products = Product.objects.filter(category_id=pk)
         serializer = ProductOutSerializer(products, many=True)

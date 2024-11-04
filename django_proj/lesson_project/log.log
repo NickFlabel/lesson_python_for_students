@@ -1,0 +1,102 @@
+INFO 2024-10-31 19:57:52,111 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:19,017 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:19,697 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:23,979 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:24,648 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:29,089 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:29,866 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:32,066 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:32,792 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:40,230 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:41,115 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 19:58:48,742 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 19:58:49,508 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:00:50,021 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:00:50,774 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:03,803 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:04,444 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:09,801 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:10,481 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:13,616 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:14,260 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:19,714 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:20,475 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:22,689 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:23,493 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:35,539 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:36,499 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:01:39,754 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:01:40,595 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-31 20:02:01,101 log Not Found: /
+WARNING 2024-10-31 20:02:01,102 basehttp "GET / HTTP/1.1" 404 5292
+WARNING 2024-10-31 20:02:01,187 log Not Found: /favicon.ico
+WARNING 2024-10-31 20:02:01,188 basehttp "GET /favicon.ico HTTP/1.1" 404 5343
+INFO 2024-10-31 20:02:08,626 views Request with method GET was made by user AnonymousUser
+INFO 2024-10-31 20:02:08,692 basehttp "GET /api/profiles-protected/ HTTP/1.1" 200 5688
+INFO 2024-10-31 20:02:08,707 basehttp "GET /staticfiles/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,708 basehttp "GET /staticfiles/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,713 basehttp "GET /staticfiles/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,713 basehttp "GET /staticfiles/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,714 basehttp "GET /staticfiles/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,715 basehttp "GET /staticfiles/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,717 basehttp "GET /staticfiles/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,718 basehttp "GET /staticfiles/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,718 basehttp "GET /staticfiles/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,721 basehttp "GET /staticfiles/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,725 basehttp "GET /staticfiles/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:08,729 basehttp "GET /staticfiles/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-10-31 20:02:47,609 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:02:48,571 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:02:56,317 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 20:02:57,130 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:02:57,951 views Request with method GET was made by user AnonymousUser
+INFO 2024-10-31 20:02:57,983 basehttp "GET /api/profiles-protected/ HTTP/1.1" 200 5688
+INFO 2024-10-31 20:03:23,040 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:03:23,733 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:03:44,025 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:03:44,706 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:03:52,218 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:03:53,015 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:04:02,745 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:04:03,643 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:05:25,869 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:05:26,568 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:05:39,366 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:05:40,044 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:05:47,629 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:05:48,308 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:05:58,989 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:05:59,661 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:06:09,382 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:06:10,141 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:06:25,230 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:06:26,076 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:06:32,673 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:06:33,360 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:06:37,708 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:06:38,369 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:06:46,904 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:06:47,665 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:07:13,330 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:07:14,143 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 20:07:19,590 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-10-31 20:07:20,286 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-31 20:36:56,559 log Unauthorized: /api/profiles/
+WARNING 2024-10-31 20:36:57,242 log Unauthorized: /api/profiles/1/
+WARNING 2024-10-31 20:36:57,901 log Unauthorized: /api/profiles/
+INFO 2024-10-31 21:35:51,491 autoreload Watching for file changes with StatReloader
+WARNING 2024-10-31 21:35:53,560 log Not Found: /
+WARNING 2024-10-31 21:35:53,562 basehttp "GET / HTTP/1.1" 404 5292
+INFO 2024-10-31 21:36:05,001 basehttp "GET /api/swagger/ HTTP/1.1" 200 2251
+INFO 2024-10-31 21:36:05,021 basehttp "GET /staticfiles/drf-yasg/swagger-ui-dist/swagger-ui.css HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,021 basehttp "GET /staticfiles/drf-yasg/style.css HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,026 basehttp "GET /staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-bundle.js HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,026 basehttp "GET /staticfiles/drf-yasg/swagger-ui-init.js HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,027 basehttp "GET /staticfiles/drf-yasg/immutable.min.js HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,029 basehttp "GET /staticfiles/drf-yasg/swagger-ui-dist/swagger-ui-standalone-preset.js HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,029 basehttp "GET /staticfiles/drf-yasg/insQ.min.js HTTP/1.1" 304 0
+INFO 2024-10-31 21:36:05,228 basehttp "GET /api/swagger/?format=openapi HTTP/1.1" 200 12440
+INFO 2024-10-31 21:50:43,208 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 21:50:43,954 autoreload Watching for file changes with StatReloader
+INFO 2024-10-31 21:51:19,136 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-10-31 21:51:19,762 autoreload Watching for file changes with StatReloader

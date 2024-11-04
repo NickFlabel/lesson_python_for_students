@@ -15,7 +15,7 @@ from drf_yasg import openapi
 router = DefaultRouter()
 router.register(r"profiles", ProfileViewSet)
 router.register(r"categories", CategoryViewSet)
-router.register(r"products", ProductViewSet, basename="products"),
+router.register(r"products", ProductViewSet, basename="products"), # products-create, products-list
 router.register(r"orders", OrderViewSet),
 router.register(r"profiles-protected", ReadOnlyProfileViewSet, basename="read-only-profiles")
 
