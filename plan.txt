@@ -161,6 +161,23 @@ Plan 19.09
 4) Практическая работа
 5) Подготовка проекта к публикации
 
+04.11
+1) Email
+2) Подготовка проекта к публикации
+3) Итоговая практическая работа
+
+07.11
+1) Экзамен
+2) Docker
+3) Отдельные контейнеры
+4) Составные приложения
+5) Кэширование в django + redis
+6) Celery - библиотека для громоздких асинхронных задач
+
+Экзамен:
+1) Устная часть - 6 баллов
+2) Практическая часть - 6 баллов
+
 CSRF - Cross-Site Request Forgery - это уникальный случайно сгенерированный токен для защиты веб-приложения от атак CSRF
 
 KISS - Keep it simple stupid
@@ -200,6 +217,14 @@ HTTP метод + url ресурса - интерфейс REST API
 pip install djangorestframework
 pip install djangorestframework-simplejwt - поддержка JWT
 pip install drf-yasg - библиотека для автоматической генерации Swagger-документации
+pip install python-dotenv - для использования в проекте .env файла
+python .\manage.py collectstatic - собирает все статические файлы из библиотек проекта
+pip install whitenoise - обработка статический файлов без специального сервера
+pip install psycopg2 - драйвер для работы с Postgresql
+pip install gunicorn - сервер для production environment (unix-системы)
+pip install uvicorn - асинхронный сервер для production environment
+
+uvicorn lesson_project.asgi:application --host 0.0.0.0 --port 8000 - команда для запуска production-сервера
 
 JWT (JSON Web Token) - открытый стандарт, который определяет комкатный и автономный способ безопасной
 передачи информации двумя сторонами

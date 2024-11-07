@@ -17,6 +17,8 @@ from rest_framework.decorators import action
 from .paginators import CustomPageNumberPagination
 from .permissions import IsOwnerOrAdmin
 import logging
+from django.core.mail import send_mail, EmailMultiAlternatives
+from django.template.loader import render_to_string
 
 logger = logging.getLogger("ecom")
 
@@ -35,6 +37,15 @@ class ReadOnlyProfileViewSet(viewsets.ReadOnlyModelViewSet):
 
     def list(self, request, *args, **kwargs):
         logger.info(f"Request with method GET was made by user {request.user}")
+        subject = "Тема письма"
+        from_email = "admin@admin.com"
+        to = "my_mail@mail.com"
+        text = "Текст"
+        html_content = render_to_string("email_template.html", {"content": text})
+
+        msg = EmailMultiAlternatives(subject, text, from_email, [to])
+        msg.attach_alternative(html_content, "text/html")
+        msg.send()
         logger.debug("DEBUG MESSAGE")
         return super().list(request, *args, **kwargs)
 
@@ -43,12 +54,12 @@ class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
     serializer_class = CategorySerializer
 
-    @action(detail=True, methods=["get"])
+    @action(detail=True, methods=["get"], url_path='comments/<int:comment_id>/')
     @swagger_auto_schema(
         operation_description="Отдает все товары какой-либо категории",
         responses={200: ProductOutSerializer(many=True)}
     )
-    def get_products(self, request, pk):
+    def get_products(self, request, pk, comment_id):
         products = Product.objects.filter(category_id=pk)
         serializer = ProductOutSerializer(products, many=True)
         return Response(serializer.data)

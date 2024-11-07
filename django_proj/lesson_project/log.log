@@ -100,3 +100,304 @@ INFO 2024-10-31 21:50:43,208 autoreload C:\Users\SelinN\Documents\lesson\django_
 INFO 2024-10-31 21:50:43,954 autoreload Watching for file changes with StatReloader
 INFO 2024-10-31 21:51:19,136 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
 INFO 2024-10-31 21:51:19,762 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 19:26:28,066 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 19:30:54,806 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-11-04 19:30:55,529 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-04 19:31:07,878 log Not Found: /
+WARNING 2024-11-04 19:31:07,880 basehttp "GET / HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:07,951 log Not Found: /favicon.ico
+WARNING 2024-11-04 19:31:07,952 basehttp "GET /favicon.ico HTTP/1.1" 404 13
+INFO 2024-11-04 19:31:12,755 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-11-04 19:31:12,854 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4396
+WARNING 2024-11-04 19:31:12,862 log Not Found: /staticfiles/admin/css/base.css
+WARNING 2024-11-04 19:31:12,864 log Not Found: /staticfiles/admin/css/dark_mode.css
+WARNING 2024-11-04 19:31:12,865 log Not Found: /staticfiles/admin/js/theme.js
+WARNING 2024-11-04 19:31:12,865 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,866 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,866 log Not Found: /staticfiles/admin/css/nav_sidebar.css
+WARNING 2024-11-04 19:31:12,868 log Not Found: /staticfiles/admin/css/login.css
+WARNING 2024-11-04 19:31:12,868 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,869 log Not Found: /staticfiles/admin/css/responsive.css
+WARNING 2024-11-04 19:31:12,871 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,872 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,873 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:31:12,876 log Not Found: /staticfiles/admin/js/nav_sidebar.js
+WARNING 2024-11-04 19:31:12,880 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 404 13
+INFO 2024-11-04 19:35:50,625 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 19:36:04,496 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-11-04 19:36:05,344 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 19:36:06,358 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4396
+WARNING 2024-11-04 19:36:06,375 log Not Found: /staticfiles/admin/css/dark_mode.css
+WARNING 2024-11-04 19:36:06,376 log Not Found: /staticfiles/admin/css/base.css
+WARNING 2024-11-04 19:36:06,378 log Not Found: /staticfiles/admin/css/responsive.css
+WARNING 2024-11-04 19:36:06,378 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,378 log Not Found: /staticfiles/admin/css/login.css
+WARNING 2024-11-04 19:36:06,380 log Not Found: /staticfiles/admin/css/nav_sidebar.css
+WARNING 2024-11-04 19:36:06,380 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,381 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,382 log Not Found: /staticfiles/admin/js/theme.js
+WARNING 2024-11-04 19:36:06,382 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,383 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,392 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,413 log Not Found: /staticfiles/admin/js/nav_sidebar.js
+WARNING 2024-11-04 19:36:06,415 log Not Found: /staticfiles/admin/css/base.css
+WARNING 2024-11-04 19:36:06,415 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,415 log Not Found: /staticfiles/admin/css/dark_mode.css
+WARNING 2024-11-04 19:36:06,416 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,417 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,421 log Not Found: /staticfiles/admin/css/nav_sidebar.css
+WARNING 2024-11-04 19:36:06,422 log Not Found: /staticfiles/admin/css/responsive.css
+WARNING 2024-11-04 19:36:06,422 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,422 log Not Found: /staticfiles/admin/css/login.css
+WARNING 2024-11-04 19:36:06,423 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:06,424 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 404 13
+INFO 2024-11-04 19:36:07,754 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4396
+WARNING 2024-11-04 19:36:07,766 log Not Found: /staticfiles/admin/css/base.css
+WARNING 2024-11-04 19:36:07,766 log Not Found: /staticfiles/admin/js/theme.js
+WARNING 2024-11-04 19:36:07,766 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,767 log Not Found: /staticfiles/admin/css/login.css
+WARNING 2024-11-04 19:36:07,768 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,768 log Not Found: /staticfiles/admin/css/dark_mode.css
+WARNING 2024-11-04 19:36:07,769 log Not Found: /staticfiles/admin/css/responsive.css
+WARNING 2024-11-04 19:36:07,769 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,770 log Not Found: /staticfiles/admin/css/nav_sidebar.css
+WARNING 2024-11-04 19:36:07,771 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,774 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,775 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,779 log Not Found: /staticfiles/admin/js/nav_sidebar.js
+WARNING 2024-11-04 19:36:07,780 log Not Found: /staticfiles/admin/css/login.css
+WARNING 2024-11-04 19:36:07,781 log Not Found: /staticfiles/admin/css/responsive.css
+WARNING 2024-11-04 19:36:07,781 log Not Found: /staticfiles/admin/css/nav_sidebar.css
+WARNING 2024-11-04 19:36:07,782 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,782 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,782 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 404 13
+WARNING 2024-11-04 19:36:07,782 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 404 13
+INFO 2024-11-04 19:36:07,783 basehttp - Broken pipe from ('127.0.0.1', 60393)
+INFO 2024-11-04 19:38:13,460 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 19:38:15,668 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4396
+INFO 2024-11-04 19:38:15,681 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2024-11-04 19:38:15,685 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-11-04 19:38:15,686 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2024-11-04 19:38:15,693 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2024-11-04 19:38:15,695 basehttp "GET /staticfiles/admin/css/login.css HTTP/1.1" 200 951
+INFO 2024-11-04 19:38:15,699 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+INFO 2024-11-04 19:38:15,702 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2024-11-04 19:39:22,654 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\lesson_project\settings.py changed, reloading.
+INFO 2024-11-04 19:39:23,515 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-04 20:01:06,248 log Not Found: /favicon.ico
+INFO 2024-11-04 20:09:51,931 views Request with method GET was made by user AnonymousUser
+INFO 2024-11-04 20:10:20,299 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:10:24,249 views Request with method GET was made by user AnonymousUser
+INFO 2024-11-04 20:10:25,602 basehttp "GET /api/profiles-protected/ HTTP/1.1" 200 5688
+INFO 2024-11-04 20:13:09,707 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:10,409 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:15,769 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:16,479 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:25,054 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:25,720 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:34,375 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:35,120 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:37,384 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:38,166 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:43,254 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:43,976 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:47,255 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:48,061 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:13:56,283 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:13:56,972 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:05,570 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:06,369 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:11,794 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:12,578 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:14,827 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:15,511 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:17,664 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:18,529 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:29,324 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:30,168 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:35,537 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:36,215 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:39,504 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:40,452 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:44,921 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:45,750 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:51,178 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:51,891 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:54,118 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:14:54,780 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:14:59,286 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:00,160 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:03,421 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:04,077 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:10,508 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:11,466 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:16,854 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:17,622 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:23,011 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:23,712 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:39,604 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:40,361 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:42,628 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:43,295 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:15:50,741 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:15:51,397 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:16:02,088 autoreload C:\Users\SelinN\Documents\lesson\django_proj\lesson_project\ecom\views.py changed, reloading.
+INFO 2024-11-04 20:16:02,951 autoreload Watching for file changes with StatReloader
+INFO 2024-11-04 20:16:07,119 views Request with method GET was made by user AnonymousUser
+INFO 2024-11-04 20:16:08,008 basehttp "GET /api/profiles-protected/ HTTP/1.1" 200 5688
+INFO 2024-11-04 20:16:08,018 basehttp "GET /staticfiles/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,018 basehttp "GET /staticfiles/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,018 basehttp "GET /staticfiles/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,020 basehttp "GET /staticfiles/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,020 basehttp "GET /staticfiles/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,021 basehttp "GET /staticfiles/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,024 basehttp "GET /staticfiles/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,025 basehttp "GET /staticfiles/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,028 basehttp "GET /staticfiles/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,029 basehttp "GET /staticfiles/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,029 basehttp "GET /staticfiles/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:16:08,035 basehttp "GET /staticfiles/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,652 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-11-04 20:36:55,705 basehttp "GET /admin/ HTTP/1.1" 200 17072
+INFO 2024-11-04 20:36:55,712 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,712 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,715 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,719 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,721 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,726 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-04 20:36:55,727 basehttp "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-11-04 20:36:55,741 basehttp "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-11-04 20:36:55,741 basehttp "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-11-04 20:36:59,698 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14877
+INFO 2024-11-04 20:36:59,712 basehttp "GET /staticfiles/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-11-04 20:36:59,715 basehttp "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2024-11-04 20:36:59,727 basehttp "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-11-04 20:36:59,731 basehttp "GET /staticfiles/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2024-11-04 20:36:59,747 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-04 20:36:59,748 basehttp "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-11-04 20:36:59,751 basehttp "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2024-11-04 20:36:59,752 basehttp "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-11-04 20:36:59,761 basehttp "GET /staticfiles/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-11-04 20:36:59,778 basehttp "GET /staticfiles/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 200 87533
+INFO 2024-11-04 20:36:59,795 basehttp "GET /staticfiles/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-11-04 20:36:59,811 basehttp "GET /staticfiles/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 200 163184
+INFO 2024-11-04 20:36:59,828 basehttp "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-11-04 20:37:01,321 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 22364
+INFO 2024-11-04 20:37:01,332 basehttp "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-11-04 20:37:01,340 basehttp "GET /staticfiles/admin/css/forms.css HTTP/1.1" 200 8710
+INFO 2024-11-04 20:37:01,341 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-04 20:37:01,348 basehttp "GET /staticfiles/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+INFO 2024-11-04 20:37:01,351 basehttp "GET /staticfiles/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-11-04 20:37:01,356 basehttp "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-11-04 20:37:01,356 basehttp "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2024-11-04 20:37:01,396 basehttp "GET /staticfiles/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-11-04 20:37:01,396 basehttp "GET /staticfiles/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-11-04 20:37:01,397 basehttp "GET /staticfiles/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-11-05 21:04:56,633 autoreload Watching for file changes with StatReloader
+WARNING 2024-11-05 21:04:58,690 log Not Found: /
+WARNING 2024-11-05 21:04:58,691 basehttp "GET / HTTP/1.1" 404 13
+WARNING 2024-11-05 21:04:58,855 log Not Found: /favicon.ico
+WARNING 2024-11-05 21:04:58,856 basehttp "GET /favicon.ico HTTP/1.1" 404 13
+INFO 2024-11-05 21:05:01,608 basehttp "GET /admin/ HTTP/1.1" 200 17072
+INFO 2024-11-05 21:05:01,616 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,616 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,617 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,619 basehttp "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,621 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,621 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,624 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,636 basehttp "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:01,636 basehttp "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,824 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14877
+INFO 2024-11-05 21:05:12,833 basehttp "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,836 basehttp "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,837 basehttp "GET /staticfiles/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,839 basehttp "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,838 basehttp "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,839 basehttp "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,843 basehttp "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,848 basehttp "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,849 basehttp "GET /staticfiles/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,853 basehttp "GET /staticfiles/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,865 basehttp "GET /staticfiles/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:12,881 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:05:12,903 basehttp "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,485 basehttp "GET /admin/auth/group/1/change/ HTTP/1.1" 200 22364
+INFO 2024-11-05 21:05:18,497 basehttp "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,497 basehttp "GET /staticfiles/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,498 basehttp "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,498 basehttp "GET /staticfiles/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,502 basehttp "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,503 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:05:18,505 basehttp "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,563 basehttp "GET /staticfiles/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,563 basehttp "GET /staticfiles/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:18,564 basehttp "GET /staticfiles/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:05:31,055 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18374
+INFO 2024-11-05 21:05:31,071 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:05:31,076 basehttp "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-11-05 21:05:31,076 basehttp "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-11-05 21:05:31,106 basehttp "GET /staticfiles/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-11-05 21:05:31,106 basehttp "GET /staticfiles/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-11-05 21:05:33,294 basehttp "GET /admin/auth/user/2/change/ HTTP/1.1" 200 32728
+INFO 2024-11-05 21:05:33,307 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:05:33,325 basehttp "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-11-05 21:05:33,327 basehttp "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-11-05 21:05:33,381 basehttp "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-11-05 21:05:33,388 basehttp "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-11-05 21:24:16,445 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18374
+INFO 2024-11-05 21:24:16,456 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,457 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,461 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,462 basehttp "GET /staticfiles/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,463 basehttp "GET /staticfiles/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,465 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,465 basehttp "GET /staticfiles/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,466 basehttp "GET /staticfiles/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,470 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,472 basehttp "GET /staticfiles/admin/js/vendor/jquery/jquery.min.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,473 basehttp "GET /staticfiles/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,473 basehttp "GET /staticfiles/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,474 basehttp "GET /staticfiles/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,477 basehttp "GET /staticfiles/admin/js/vendor/xregexp/xregexp.min.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,481 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:24:16,481 basehttp "GET /staticfiles/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,483 basehttp "GET /staticfiles/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,489 basehttp "GET /staticfiles/admin/img/icon-no.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,489 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,501 basehttp "GET /staticfiles/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,508 basehttp "GET /staticfiles/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,508 basehttp "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,509 basehttp "GET /staticfiles/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:16,509 basehttp "GET /staticfiles/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,004 basehttp "GET /admin/auth/user/2/change/ HTTP/1.1" 200 32728
+INFO 2024-11-05 21:24:18,013 basehttp "GET /staticfiles/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,014 basehttp "GET /staticfiles/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,014 basehttp "GET /staticfiles/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,014 basehttp "GET /staticfiles/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,015 basehttp "GET /staticfiles/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,022 basehttp "GET /staticfiles/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,022 basehttp "GET /staticfiles/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,022 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:24:18,025 basehttp "GET /staticfiles/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,073 basehttp "GET /staticfiles/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,075 basehttp "GET /staticfiles/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,075 basehttp "GET /staticfiles/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,075 basehttp "GET /staticfiles/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:18,076 basehttp "GET /staticfiles/admin/img/icon-clock.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:24:27,691 basehttp "POST /admin/auth/user/2/change/ HTTP/1.1" 302 0
+INFO 2024-11-05 21:24:27,710 basehttp "GET /admin/auth/user/ HTTP/1.1" 200 18598
+INFO 2024-11-05 21:24:27,726 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:24:29,363 basehttp "GET /admin/auth/user/2/change/ HTTP/1.1" 200 32737
+INFO 2024-11-05 21:24:29,376 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO 2024-11-05 21:35:03,889 basehttp "GET /admin/auth/ HTTP/1.1" 200 6364
+INFO 2024-11-05 21:35:03,896 basehttp "GET /staticfiles/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,898 basehttp "GET /staticfiles/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,899 basehttp "GET /staticfiles/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,902 basehttp "GET /staticfiles/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,903 basehttp "GET /staticfiles/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,905 basehttp "GET /staticfiles/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,906 basehttp "GET /staticfiles/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,912 basehttp "GET /staticfiles/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:03,912 basehttp "GET /staticfiles/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-11-05 21:35:04,701 basehttp "GET /admin/ HTTP/1.1" 200 17076

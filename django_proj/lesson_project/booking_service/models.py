@@ -74,3 +74,4 @@ class Amenity(models.Model):
 
 # rooms = Room.objects.raw("SELECT * FROM booking_service_room;") - голый SQL-запрос
 # room = Room.objects.select_related("category_id").first() - select_relate - способ создавать запросы с JOIN в Django ORM
+# prefetch_related - метод, работающий в обратном направлении - от первичной модели к вторичный - он делает два запроса в рамках одного соединения
