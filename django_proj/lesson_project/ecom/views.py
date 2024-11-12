@@ -19,6 +19,7 @@ from .permissions import IsOwnerOrAdmin
 import logging
 from django.core.mail import send_mail, EmailMultiAlternatives
 from django.template.loader import render_to_string
+from .tasks import long_task
 
 logger = logging.getLogger("ecom")
 
@@ -37,6 +38,7 @@ class ReadOnlyProfileViewSet(viewsets.ReadOnlyModelViewSet):
 
     def list(self, request, *args, **kwargs):
         logger.info(f"Request with method GET was made by user {request.user}")
+        long_task.delay() # Отправка задачи через брокер сообщений в celery
         subject = "Тема письма"
         from_email = "admin@admin.com"
         to = "my_mail@mail.com"

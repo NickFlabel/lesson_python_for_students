@@ -1,8 +1,12 @@
-import redis
+import multiprocessing
+import os
+import asyncio
+import requests # использует блокирующие сокеты
 
-r = redis.Redis(host="127.0.0.1", port=6379, decode_responses=True)
+# event loop в python:
+# while True:
+#     if events:
+#         event = events.pop()
+#         event.process()
 
-r.set("my_key", "my_val")
-
-val = r.get("my_key")
-print(val)
+if __name__ == "__main__":

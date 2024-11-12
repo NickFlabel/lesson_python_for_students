@@ -1,6 +1,6 @@
 from django.urls import path
 from booking_service.views import (
-    check_availability, register, RoomListView, RoomDetailView, RoomCreateView, RoomDeleteView, RoomUpdateView, get_json_rooms
+    check_availability, register, RoomListView, RoomDetailView, RoomCreateView, RoomDeleteView, RoomUpdateView, get_json_rooms, activate_user
 )
 from django.contrib.auth import views as auth_views
 
@@ -14,5 +14,6 @@ urlpatterns = [
     path("register/", register, name="registration"),
     path("login/", auth_views.LoginView.as_view(), name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
-    path("rooms_json/", get_json_rooms)
+    path("rooms_json/", get_json_rooms),
+    path("activate/<str:token>", activate_user, name="activate")
 ]

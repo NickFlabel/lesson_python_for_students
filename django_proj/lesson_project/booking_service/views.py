@@ -187,3 +187,22 @@ def get_json_rooms(request):
     data = [{"id": obj.id, "name": obj.name} for obj in objects]
 
     return JsonResponse(data, safe=False)
+
+from django.http import HttpResponse
+from django.core.signing import Signer, BadSignature
+from django.contrib.auth.models import User
+
+signer = Signer()
+
+def activate_user(request, token):
+    try:
+        user_id = signer.unsign(token)
+        user = User.objects .get(pk=user_id)
+        if not user.is_active:
+            user.is_active = True
+            user.save()
+            return HttpResponse("Ваш аккаунт активирован")
+        else:
+            return HttpResponse("Аккаунт уже активирован")
+    except (BadSignature, User.DoesNotExist):
+        return HttpResponse("Недействительная ссылка активации")

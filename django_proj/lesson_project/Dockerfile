@@ -26,4 +26,4 @@ ENV DJANGO_SECRET_KEY=django-insecure-0b5mlk$d!+@!#3yjs6kr!s(6u!0=6#)g-*=r5!-x+_
 # CMD - команда при запуске контейнера, которая может быть перезаписана в docker run
 # CMD ["python3", "manage.py", "runserver", "0.0.0.0:8000"]
 # ENTRYPOINT - команда при запуске контейнера, которая не может быть перезаписана в docker run
-ENTRYPOINT ["./entrypoint.sh"]
+
