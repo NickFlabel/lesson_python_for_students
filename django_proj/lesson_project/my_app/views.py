@@ -4,7 +4,22 @@ from django.template import loader
 from my_app.models import BBoard
 from my_app.forms import BBoardForm
 
+from datetime import datetime
+from django.core.cache import cache
+from django.http import JsonResponse
+
 # Create your views here.
+
+
+def cached_view(request):
+    cached_data = cache.get("current_time")
+    if cached_data:
+        return JsonResponse({"time": cached_data, "cached": True})
+    
+    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    cache.set("current_time", current_time, timeout=30)
+    return JsonResponse({"time": current_time, "cached": False})
+
 
 def index(request: HttpRequest) -> HttpResponse:
     template = loader.get_template("index.html")

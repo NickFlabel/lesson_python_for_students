@@ -1,0 +1,69 @@
+version: "3.8" # версия docker-compose
+
+services: # перечисляем сервисы
+  django: # произвольное название сервиса
+    build: # то, откуда docker-compose возьмет Dockerfile для строительства образа
+      context: . # Путь к директории, где распологается Dockerfile
+      dockerfile: Dockerfile # Название Dockerfile, который будет искать docker-compose
+      args: # Аргументы, пробрасываемые в Dockerfile
+        - BUILD_VERSION="1.0"
+    ports: # Связывание портов внутри контейнера и хостовой ОС
+      - "8000:8000"
+    environment: # Способ задать отдельные переменные окружения
+      - DATABASE_NAME=postgres
+      - DATABASE_USER=postgres
+      - DATABASE_PASSWORD=1234
+      - DATABASE_HOST=db # Имя сервиса == имя контейнера внутри сети
+      - DATABASE_PORT=5432
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    env_file: # Способ задать переменные окружения из какого-либо файла
+      - .env
+    restart: always
+    # command: sh -c "python3 manage.py migrate && python3 manage.py runserver 0.0.0.0:8000" # команда при запуске контейнера
+    depends_on: # Зависимость контейнера - контейнер запускается только после запуска указанного сервиса
+      - db
+      - redis
+    networks:
+      - django-network
+      # - another_network
+    # logging:
+    #   driver: "json-file"
+    #   options:
+    #     max-size="10m"
+    #     max-file="3"
+    # healthcheck: - настройка проверки корректности работы контейнера (если проваливается то restart)
+    #   test: ["executable", "arg"]
+    #   interval: 1m30s
+    #   timeout: 30s
+    #   retries: 5
+    #   start_period: 30s
+
+  db:
+    image: postgres:13 # Образ с Docker Hub из которого будет строится сервис
+    environment:
+      POSTGRES_USER: postgres # Имя пользователя для входа в psql сервер
+      POSTGRES_PASSWORD: 1234 # пароль
+      POSTGRES_DB: postgres
+    volumes: # Тома - способ сохранять данные контейнера даже после отключения и удаления самого контейнера
+      - postgres_data:/var/lib/postgresql/data # <путь на локальной машине (хостовой ОС)>:<Путь внутри контейнера>
+    networks:
+      - django-network
+    restart: always
+  
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - django-network
+
+volumes:
+  postgres_data:
+
+networks:
+  django-network:
+    driver: bridge # настройка по умолчанию. Создание отдельной изолированной сети
+    # host - контейнер использует сетей стек хоста, а не виртуальную сеть Docker
+    # none - контейнер запускается без сети
+    # overlay - используется для создания распределенной сети между несколькиим хостами Docker

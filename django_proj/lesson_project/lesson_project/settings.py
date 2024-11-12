@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework_simplejwt",
     "drf_yasg",
+    "django_redis",
 
     # local
     "my_app",
@@ -93,15 +94,19 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     },
-    "postgresql": {
+    "postgres": {
         "ENGINE": "django.db.backends.postgresql",
-        "NAME": "my_db",
-        "USER": "username",
-        "PASSWORD": "my_password",
-        "HOST": "localhost",
-        "PORT": "5432",
+        "NAME": os.getenv("DATABASE_NAME"),
+        "USER": os.getenv("DATABASE_USER"),
+        "PASSWORD": os.getenv("DATABASE_PASSWORD"),
+        "HOST": os.getenv("DATABASE_HOST"),
+        "PORT": os.getenv("DATABASE_PORT"),
     }
 }
+
+db_choice = os.getenv("DJANGO_DB", 'default')
+
+DATABASES["default"] = DATABASES.get(db_choice)
 
 
 # Password validation
@@ -220,3 +225,14 @@ EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "my_mail@gmail.com"
 EMAIL_HOST_PASSWORD = "my_password"
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": f"redis://{os.getenv("REDIS_HOST")}:{os.getenv("REDIS_PORT")}",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "SERIALIZER": "django_redis.serializers.json.JSONSerializer",
+        }
+    }
+}
